@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Typograph */
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Layout */
+
+header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 5px 20px -2px #000000;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.header-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.header li {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 1em;
+}
+
+.header li a {
+  color: black; /* placeholder color */
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header li a:focus {
+  color: gray;
+}
+
+.sec-hero,
+.sec-rest {
+  background-color: #fafafa; /* placeholder color */
+  height: 100vh;
+}
+
+
+.hero-container {
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.container-gen,
+.hero-container {
+  position: absolute;
+  margin: 3em auto;
+  width: 90%;
+  text-align: center;
+}
+
+.pad {
+    padding: 5em;
+   
+}
