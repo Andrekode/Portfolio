@@ -64,6 +64,7 @@ header {
   background-color: #fafafa; /* placeholder color */
   height: 100vh;
   
+  
 
 }
 
@@ -71,36 +72,36 @@ header {
   background: rgb(16,23,173);
   background: linear-gradient(35deg, rgba(16,23,173,1) 0%, rgba(17,42,185,1) 38%, rgba(18,97,222,1) 99%); 
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 
-.container-gen,
 .hero-container {
   position: absolute;
-  margin: 3em auto;
-  width: 90%;
   text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
 }
 
+
+
 .pad {
-    padding: 5em;
+    padding-top: 5em;
    
 }
 
 /* section content */
 
 .sec-container-head {
-  margin-bottom: 7em;
+  text-align: center;
+  margin: 6em 0;
 }
 
 .sec-container-content {
   display: flex;
+  justify-content: space-around;
   width: 100%;
-  justify-content: space-between;
- 
-  
 
 }
 
@@ -110,16 +111,17 @@ header {
 .sec-about-myskill {
   text-align: left;
   padding: 1em 1em;
-  border: solid 20px gray;
+  border: solid 20px  grey;
 }
 .sec-about-text {
-  width: 45%;
+  width: 40%;
+  
   
   
 }
 
 .sec-about-myskill {
-  width: 45%;
+  width: 40%;
   
  
 }
