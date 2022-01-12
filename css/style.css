@@ -19,7 +19,7 @@ h2 {
   font-weight: 700;
 }
 
-/* Layout */
+/* Navigation */
 
 header {
   background-color: #fff;
@@ -57,18 +57,23 @@ header {
   color: gray;
 }
 
+/* layout */
+
 .sec-hero,
 .sec-rest {
   background-color: #fafafa; /* placeholder color */
   height: 100vh;
+  
+
 }
 
-
-.hero-container {
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-
+.sec-hero {
+  background: rgb(16,23,173);
+  background: linear-gradient(35deg, rgba(16,23,173,1) 0%, rgba(17,42,185,1) 38%, rgba(18,97,222,1) 99%); 
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-gen,
@@ -83,3 +88,40 @@ header {
     padding: 5em;
    
 }
+
+/* section content */
+
+.sec-container-head {
+  margin-bottom: 7em;
+}
+
+.sec-container-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+ 
+  
+
+}
+
+
+
+.sec-about-text,
+.sec-about-myskill {
+  text-align: left;
+  padding: 1em 1em;
+  border: solid 20px gray;
+}
+.sec-about-text {
+  width: 45%;
+  
+  
+}
+
+.sec-about-myskill {
+  width: 45%;
+  
+ 
+}
+
+
