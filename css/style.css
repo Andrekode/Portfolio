@@ -83,6 +83,10 @@ header {
   transform: translate(-50%, -50%);
   
 }
+.container-gen {
+  width: 90%;
+  margin: auto;
+}
 
 
 
@@ -115,6 +119,7 @@ header {
 }
 .sec-about-text {
   width: 40%;
+  margin-right: 1em;
   
   
   
