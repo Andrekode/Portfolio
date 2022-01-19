@@ -26,12 +26,11 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0px 5px 20px -2px #000000;
+  box-shadow: 0 0 20px 0 #000000;
 }
 .nav-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1em 2em;
 }
 
@@ -44,7 +43,7 @@ header {
 .header li {
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 0 1em;
+  margin: 0 .8em;
 }
 
 .header li a {
@@ -62,7 +61,7 @@ header {
 .sec-hero,
 .sec-rest {
   background-color: #fafafa; /* placeholder color */
-  height: 100vh;
+  min-height: 100vh;
   
   
 
@@ -84,8 +83,9 @@ header {
   
 }
 .container-gen {
-  width: 90%;
+  max-width: 50%;
   margin: auto;
+ 
 }
 
 
@@ -104,8 +104,9 @@ header {
 
 .sec-container-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
+  
 
 }
 
@@ -115,20 +116,14 @@ header {
 .sec-about-myskill {
   text-align: left;
   padding: 1em 1em;
-  border: solid 20px  grey;
+  /* border: solid 20px  grey; */
 }
+
 .sec-about-text {
   width: 40%;
-  margin-right: 1em;
-  
-  
-  
 }
 
 .sec-about-myskill {
-  width: 40%;
-  
- 
+  width: 30%;
 }
-
 
