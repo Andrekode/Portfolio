@@ -34,25 +34,25 @@ header {
   padding: 1em 2em;
 }
 
-.header-nav ul {
+nav ul {
   display: flex;
   list-style: none;
   justify-content: center;
 }
 
-.header li {
+header li {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0 .8em;
 }
 
-.header li a {
+header  a {
   color: black; /* placeholder color */
   text-decoration: none;
 }
 
-.header li a:hover,
-.header li a:focus {
+header a:hover,
+header a:focus {
   color: gray;
 }
 
@@ -60,14 +60,14 @@ header {
 
 .sec-hero,
 .sec-rest {
-  background-color: #fafafa; /* placeholder color */
+  background-color: #f8f8f8;; /* placeholder color */
   min-height: 100vh;
   
   
 
 }
 
-.sec-hero {
+.sec-hero, .contact-bg {
   background: rgb(16,23,173);
   background: linear-gradient(35deg, rgba(16,23,173,1) 0%, rgba(17,42,185,1) 38%, rgba(18,97,222,1) 99%); 
   color: white;
