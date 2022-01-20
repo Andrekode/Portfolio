@@ -6,6 +6,7 @@ html {
 body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
+  line-height: 1.6;
 }
 
 /* Typograph */
@@ -36,19 +37,22 @@ header {
 
 nav ul {
   display: flex;
-  list-style: none;
   justify-content: center;
+  list-style: none;
+  
 }
 
 header li {
-  font-size: 1.5rem;
-  font-weight: 700;
   margin: 0 .8em;
 }
 
 header  a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
   color: black; /* placeholder color */
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 header a:hover,
@@ -67,9 +71,9 @@ header a:focus {
 
 }
 
-.sec-hero, .contact-bg {
-  background: rgb(16,23,173);
-  background: linear-gradient(35deg, rgba(16,23,173,1) 0%, rgba(17,42,185,1) 38%, rgba(18,97,222,1) 99%); 
+.sec-hero, footer {
+ 
+  background: url(../images/circle-blues.png);
   color: white;
   
 }
@@ -95,17 +99,26 @@ header a:focus {
    
 }
 
+footer {
+  padding: 3em 0;
+  text-align: center;
+}
+
 /* section content */
 
 .sec-container-head {
   text-align: center;
   margin: 6em 0;
+  
 }
 
 .sec-container-content {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: space-around;
+  margin: 0 auto;
+
+  
+ 
   
 
 }
@@ -120,7 +133,7 @@ header a:focus {
 }
 
 .sec-about-text {
-  width: 40%;
+  width: 50%;
 }
 
 .sec-about-myskill {
