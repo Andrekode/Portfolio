@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -5,6 +9,7 @@ html {
 
 body {
   margin: 0;
+  color: #404040;
   font-family: "Ubuntu", sans-serif;
   line-height: 1.6;
 }
@@ -73,7 +78,7 @@ header a:focus {
 
 .sec-hero, footer {
  
-  background: url(../images/circle-blues.png);
+  background-image:  url(../images/circle-blues.png);
   color: white;
   
 }
