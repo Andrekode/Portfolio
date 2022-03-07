@@ -1,15 +1,30 @@
+:root {
+  --main-bg-clr: #f8f9fa;
+  --main-clr: #212529;
+  --myskill-bg-clr: #6c757d;
+  --myskill-clr: #f8f9fa;
+}
+
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
   line-height: 1.6;
+  color: var(--main-clr);
 }
 
 /* Typograph */
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: 700;
@@ -23,7 +38,7 @@ h2 {
 /* Navigation */
 
 header {
-  background-color: #fff;
+  background-color: var(--main-bg-clr);
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -32,25 +47,26 @@ header {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  padding: 1em 2em;
+  align-items: center;
+  padding: 0.5em 2em;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  
 }
 
 header li {
-  margin: 0 .8em;
+  margin: 0 0.8em;
 }
 
-header  a {
+header a {
+  color: var(--main-clr);
   font-size: 1.5rem;
   font-weight: 700;
+
   letter-spacing: 2px;
-  color: black; /* placeholder color */
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -64,18 +80,13 @@ header a:focus {
 
 .sec-hero,
 .sec-rest {
-  background-color: #f8f8f8;; /* placeholder color */
   min-height: 100vh;
-  
-  
-
 }
 
-.sec-hero, footer {
- 
-  background: url(../images/circle-blues.png);
+.sec-hero,
+footer {
+  background-color: #343a40;
   color: white;
-  
 }
 
 .hero-container {
@@ -84,19 +95,13 @@ header a:focus {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  
 }
 .container-gen {
-  max-width: 50%;
   margin: auto;
- 
 }
 
-
-
 .pad {
-    padding-top: 5em;
-   
+  padding-top: 3em;
 }
 
 footer {
@@ -109,34 +114,35 @@ footer {
 .sec-container-head {
   text-align: center;
   margin: 6em 0;
-  
 }
 
 .sec-container-content {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-
-  
- 
-  
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  width: 60%;
+  margin: auto;
 }
-
-
 
 .sec-about-text,
 .sec-about-myskill {
-  text-align: left;
-  padding: 1em 1em;
-  /* border: solid 20px  grey; */
-}
-
-.sec-about-text {
-  width: 50%;
+  padding: 1em;
 }
 
 .sec-about-myskill {
-  width: 30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
 }
 
+.sec-about-myskill-header {
+  grid-column: 1 / -1;
+}
+
+.myskill-box {
+  background-color: var(--myskill-bg-clr);
+  color: var(--myskill-clr);
+  padding: 0.5em 1em;
+
+  text-align: center;
+}
