@@ -1,6 +1,6 @@
 :root {
   --main-bg-clr: #f8f9fa;
-  --main-clr: #343a40;
+  --main-clr: #495057;
   --myskill-bg-clr: #495057;
   --myskill-clr: #e9ecef;
   --section-bg: #dee2e6;
@@ -226,9 +226,6 @@ footer {
 @media (max-width: 630px) {
   nav ul {
     display: none;
-  }
-  .pad {
-    padding-top: 0;
   }
 }
 
