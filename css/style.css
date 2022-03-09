@@ -154,6 +154,9 @@ footer {
 .sec-rest {
   background-color: var(--section-bg);
 }
+.section-h2 {
+  margin-bottom: 0.2em;
+}
 
 .pad {
   padding-top: 6em;
