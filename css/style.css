@@ -138,11 +138,26 @@ footer {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.hero-container p:last-of-type {
+  margin-bottom: 4em;
+}
 
 .sec-hero,
 .sec-rest {
   min-height: 100vh;
 }
+.proj-btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: var(--main-bg-clr);
+  color: var(--myskill-bg-clr);
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  display: block;
+  max-width: 200px;
+  margin: auto;
+}
+
 .container-gen {
   margin: auto;
   padding: 1em;
