@@ -33,7 +33,7 @@ p {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   white-space: nowrap;
   color: #e9ecef;
@@ -45,12 +45,17 @@ h3 {
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 p {
   line-height: 1.6;
+  letter-spacing: 0.1em;
 }
 
 /* Navigation */
