@@ -1,8 +1,8 @@
 :root {
   --main-bg-clr: #f8f9fa;
   --main-clr: #343a40;
-  --myskill-bg-clr: #6c757d;
-  --myskill-clr: #f8f9fa;
+  --myskill-bg-clr: #495057;
+  --myskill-clr: #e9ecef;
   --section-bg: #dee2e6;
   --title-clr: #40aae8;
 
@@ -36,6 +36,7 @@ h1 {
   font-size: 1.5rem;
   font-weight: 700;
   white-space: nowrap;
+  color: #e9ecef;
 }
 
 h2,
