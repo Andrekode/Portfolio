@@ -3,7 +3,8 @@
   --main-clr: #343a40;
   --myskill-bg-clr: #6c757d;
   --myskill-clr: #f8f9fa;
-  --section-bg: #e9ecef;
+  --section-bg: #dee2e6;
+  --title-clr: #40aae8;
 
   --header-shadow: 0 0 20px 0 #000000;
 }
@@ -20,7 +21,6 @@ html {
 
 body {
   font-family: "Ubuntu", sans-serif;
-  color: var(--main-clr);
 }
 
 /* Typograph */
@@ -38,6 +38,11 @@ h1 {
   white-space: nowrap;
 }
 
+h2,
+h3 {
+  color: var(--title-clr);
+}
+
 h2 {
   font-size: 1.2rem;
   font-weight: 700;
@@ -53,7 +58,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
-  background-color: var(--main-bg-clr);
+  background-color: #e9ecef;
   position: fixed;
   width: 100%;
   z-index: 1000;
