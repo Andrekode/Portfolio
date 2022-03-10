@@ -1,71 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <title>Andrè Maeland - Full-Stack Dev</title>
 </head>
+
 <body>
     <header>
-        <div class="nav-container">
-            <div class="header-logo">
-                <h3>AM</h3> <!--- placeholder for logo-->
-            </div>
-            <nav>
-                <ul>
+        <h3>AM</h3>
+        <!--- placeholder for logo-->
+        <nav class="nav">
+            <div class="menu-btn">
+                <div class="menu-btn__burger">
+
+                </div>
+                <ul class="links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a> </li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
-            
-
-        </div>
-        
+        </nav>
     </header>
     
-    <section class="sec-hero" id="home">
+
+    <section class="sec-hero test" id="home">
         <div class="hero-container">
-            <h1>Hey, I'm Andrè Maeland</h1>
+            <h1>Hey, I'm Andrè Mæland</h1>
             <p>Full-Stack Web Developer </p>
-            <p>Loving all things code</p>
-            <a href="#" class="proj-btn"></a>
-        </section>
-
+            <p class="test-p">Loving all things code</p>
+            <a href="#projects" class="proj-btn">Projects</a>
         </div>
+    </section>
 
-    <section class="sec-rest pad" id="about">
-        
+
+    <section class="sec-rest pad about-bg" id="about">
+
         <div class="container-gen">
             <div class="sec-container-head">
                 <h2 class="section-h2">About me</h2>
-                <p class="section-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quam rem neque hic quis veniam explicabo possimus </p>
+                <p class="section-sub">My name is Andrè Mæland, currently attending AMO-course Kodehodet</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    
+
             </div>
             <div class="sec-container-content">
-                
+
                 <div class="sec-about-text">
                     <h3>Me</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nesciunt minima magnam aliquid molestiae eos praesentium fugit possimus distinctio quidem expedita accusamus eveniet, a amet soluta hic explicabo dolorum doloremque!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eaque facere inventore natus consequuntur praesentium saepe, laboriosam sint quis aperiam eum voluptatibus repellat expedita fugit sapiente quo eos! Et, laboriosam.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem praesentium magnam saepe assumenda aut vitae ea beatae deleniti, doloribus fugiat dolor numquam perferendis tempore delectus dignissimos suscipit debitis tenetur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nesciunt minima magnam aliquid
+                        molestiae eos praesentium fugit possimus distinctio quidem expedita accusamus eveniet, a amet
+                        soluta hic explicabo dolorum doloremque!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eaque facere inventore natus
+                        consequuntur praesentium saepe, laboriosam sint quis aperiam eum voluptatibus repellat expedita
+                        fugit sapiente quo eos! Et, laboriosam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem praesentium magnam saepe
+                        assumenda aut vitae ea beatae deleniti, doloribus fugiat dolor numquam perferendis tempore
+                        delectus dignissimos suscipit debitis tenetur.</p>
                 </div>
                 <div class="sec-about-myskill">
-                    <h3>Skills</h3>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JAVASCRIPT</p>
-                    <p>PYTHON</p>
-                    <p>VSCODE</p>
-                    <p>GIT</p>
+                    <h3 class="sec-about-myskill-header">Skills</h3>
+                    <div class="myskill-box">Html</div>
+                    <div class="myskill-box">Css</div>
+                    <div class="myskill-box">Javascript</div>
+                    <div class="myskill-box">React</div>
+                    <div class="myskill-box">Python</div>
+                    <div class="myskill-box">Git</div>
+                    <div class="myskill-box">Github</div>
+                    <div class="myskill-box">Vscode</div>
+                    <div class="myskill-box">Figma</div>
 
                 </div>
-                
+
             </div>
 
         </div> <!-- /container-gen  -->
@@ -76,23 +86,25 @@
         <div class="container-gen">
             <div class="sec-container-head">
                 <h2 class="section-h2">Projects</h2>
-                <p class="section-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quam rem neque hic quis veniam explicabo possimus </p>
+                <p class="section-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quam rem neque hic
+                    quis veniam explicabo possimus </p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    
+
             </div>
 
         </div>
 
     </section>
 
-    <section class="sec-rest contact-bg pad" id="contact">
+    <section class="sec-rest contact-bg pad about-bg" id="contact">
         <div class="container-gen">
             <div class="sec-container-head">
                 <h2 class="section-h2">Contact</h2>
-                <p class="section-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quam rem neque hic quis veniam explicabo possimus </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>    
+                <p class="section-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quam rem neque hic
+                    quis veniam explicabo possimus </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
-           
+
         </div>
 
     </section>
@@ -102,6 +114,7 @@
         <h3>Lorem ipsum dolor sit amet</h3>
     </footer>
 
-
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
