@@ -117,20 +117,28 @@ nav li {
 
 .mobile-menu-link{
   font-weight: 700;
-  display: block;
   background-color: #e9ecef;
   text-align: right;
   padding: 1em 3em;
   border-bottom: 1px solid;
   text-transform: uppercase;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 
 
+
+
 .mobile-menu-link a {
+  display: block;
+  padding: 1em 0;
   text-decoration: none;
   color: var(--main-clr);
+}
+.mobile-menu-link:hover a,
+.mobile-menu-link:focus a {
+  color: grey; 
 }
 
 .menu-btn {
