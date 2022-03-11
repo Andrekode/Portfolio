@@ -315,8 +315,11 @@ footer {
   h2 {
     font-size: 2.5rem;
   }
-  .menu-btn {
+  .menu-btn__burger {
     display: none;
+  }
+  .mobile-menu {
+    visibility: hidden;
   }
   .sec-about-myskill {
     grid-template-columns: repeat(4, 1fr);
@@ -347,6 +350,7 @@ footer {
     gap: 0 8em;
     
   }
+ 
   
   .sec-about-text{
     width: 100%;
