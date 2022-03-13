@@ -323,11 +323,12 @@ footer {
   h2 {
     font-size: 2.5rem;
   }
-  .menu-btn__burger {
-    display: none;
-  }
+  
   .mobile-menu {
     visibility: hidden;
+  }
+  .menu-btn {
+    display: none;
   }
   .sec-about-myskill {
     grid-template-columns: repeat(4, 1fr);
@@ -341,6 +342,7 @@ footer {
   nav ul {
     display: none;
   }
+  
 }
 
 @media (min-width: 850px) {

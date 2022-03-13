@@ -18,7 +18,7 @@ menuBtn.addEventListener("click", () => {
   
 });
 
-// When user clicks nav link, returns hamburger menu to  default state and hides menu
+// When user clicks nav links, returns hamburger menu to  default state and hides menu
 
 mobileMenuLink.forEach(element => {
   element.addEventListener('click', () =>{
