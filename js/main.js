@@ -1,29 +1,19 @@
 const menuBtn = document.querySelector(".menu-btn");
-const mobileMenu = document.querySelector(".mobile-menu")
-const mobileMenuLink = document.querySelectorAll(".mobile-menu-link")
-let menuOpen = false
+const btnBurger = document.querySelector(".menu-btn__burger");
+const mobileMenu = document.querySelector(".mobile-menu");
 
-// functionlity to hamburger menu, hides and shows mobile menu version of nav. 
+// functionlity to hamburger menu, toggles menu button and the menu.
 
 menuBtn.addEventListener("click", () => {
-  if (!menuOpen) {
-    menuBtn.classList.add('open')
-    mobileMenu.classList.add('menu-active')
-    menuOpen = true
-  }else {
-    menuBtn.classList.remove('open')
-    mobileMenu.classList.remove('menu-active')
-    menuOpen = false
-  }
-  
+  menuBtn.classList.toggle("open");
+  mobileMenu.classList.toggle("menu-active");
 });
 
-// When user clicks nav links, returns hamburger menu to  default state and hides menu
+//  returns hamburger/menu to default state when options are clicked, or user clicks outside of the menu.
 
-mobileMenuLink.forEach(element => {
-  element.addEventListener('click', () =>{
-    mobileMenu.classList.remove("menu-active")
-    menuBtn.classList.remove('open')
-    menuOpen = false
-  })
-})
+window.addEventListener("mouseup", function (e) {
+  if (e.target != mobileMenu && e.target != menuBtn && e.target != btnBurger) {
+    mobileMenu.classList.remove("menu-active");
+    menuBtn.classList.remove("open");
+  }
+});
