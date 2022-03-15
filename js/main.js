@@ -1,6 +1,9 @@
 const menuBtn = document.querySelector(".menu-btn");
 const btnBurger = document.querySelector(".menu-btn__burger");
 const mobileMenu = document.querySelector(".mobile-menu");
+const d = new Date();
+const currentYear = d.getFullYear(); // dynamic update of year in footer
+const copyRight = document.querySelector(".copyright");
 
 // functionlity to hamburger menu, toggles menu button and the menu.
 
@@ -17,3 +20,6 @@ window.addEventListener("mouseup", function (e) {
     menuBtn.classList.remove("open");
   }
 });
+
+//  updates text in footer with current year
+copyRight.textContent += ` Copyright ${currentYear}, Andrè Mæland`;
