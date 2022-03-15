@@ -234,7 +234,7 @@ footer {
 
 .sec-container-head {
   text-align: center;
-  margin-bottom: 5em;
+  margin-bottom: 2em;
 }
 .sec-rest {
   background-color: var(--section-bg);
@@ -244,12 +244,18 @@ footer {
 }
 
 .pad {
-  padding-top: 7em;
+  padding-top: 6.5em;
 }
+
+/* footer */
 
 footer {
   padding: 3em 0;
   text-align: center;
+}
+
+.copyright {
+  color: var(--title-clr);
 }
 
 /* about */
@@ -286,6 +292,46 @@ footer {
   grid-column: 1 / -1;
 }
 
+/* contact */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-clr);
+  color: var(--main-bg-clr);
+  max-width: 37.5em;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  margin-bottom: 3em;
+}
+
+.contact-form label {
+  line-height: 2em;
+}
+
+.contact-form textarea {
+  min-height: 12em;
+  resize: vertical;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5em 0.5em;
+  margin-bottom: 1em;
+  background-color: var(--section-bg);
+}
+
+#submit-btn {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--main-bg-clr);
+  color: var(--myskill-bg-clr);
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+}
+
 /* media */
 
 @media (min-width: 630px) {
@@ -309,7 +355,7 @@ footer {
 }
 
 @media (max-width: 630px) {
-  nav ul {
+  .links {
     display: none;
   }
 }
