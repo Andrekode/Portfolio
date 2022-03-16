@@ -39,7 +39,7 @@
 
 
     <section class="sec-hero" id="home">
-        <div class="hero-container">
+        <div class="hero-container pad">
             <h1>Hey, I'm Andrè Mæland</h1>
             <p class="hero__p1">Full-Stack Web Developer </p>
             <p>Loving all things <span class="hero-clr-text-brack">{</span><span
@@ -142,14 +142,14 @@
             </div>
             <div class="form-container">
                 <form class="contact-form">
-                    <label>Name</label>
-                    <input class="input-field" type="text" name="name">
-                    <label>Subject</label>
-                    <input class="input-field" type="text" name="subject">
-                    <label>Email</label>
-                    <input class="input-field" type="text" name="email">
-                    <label>Message</label>
-                    <textarea class="input-field" name="message"></textarea>
+                    <label for="name">Name</label>
+                    <input id="name" class="input-field" type="text" name="name">
+                    <label for="subject">Subject</label>
+                    <input id="subject" class="input-field" type="text" name="subject">
+                    <label for="email">Email</label>
+                    <input id="email" class="input-field" type="email" name="email">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="input-field" name="message"></textarea>
                     <input id="submit-btn" type="submit" value="Send">
 
                 </form>
