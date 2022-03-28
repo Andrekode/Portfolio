@@ -11,52 +11,52 @@
 </head>
 
 <body>
-    <header>
-        <img class="header__avatar" src="./images/avatar.png" width="640" height="360" alt="logo" />
+    <header class="header">
+        <img class="avatar" src="./images/avatar.png" width="640" height="360" alt="logo" />
         <!--- placeholder for logo-->
-        <nav class="nav">
+        <nav>
             <div class="menu-btn">
                 <div class="menu-btn__burger">
 
                 </div>
             </div>
-            <ul class="links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a> </li>
-                <li><a href="#">Cv</a> </li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav">
+                <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about">About</a> </li>
+                <li class="nav__item"><a class="nav__link" href="#">Cv</a> </li>
+                <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
             </ul>
         </nav>
         <ul class="mobile-menu">
-            <li class="mobile-menu-link"><a href="#home">Home</a></li>
-            <li class="mobile-menu-link"><a href="#about">About</a></li>
-            <li class="mobile-menu-link"><a href="#">Cv</a></li>
-            <li class="mobile-menu-link"><a href="#projects">Projects</a></li>
-            <li class="mobile-menu-link"><a href="#contact">Contact</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#home">Home</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#about">About</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Cv</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#projects">Projects</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#contact">Contact</a></li>
         </ul>
     </header>
 
 
-    <section class="sec-hero" id="home">
-        <div class="hero-container pad">
-            <h1>Hey, I'm Andrè Mæland</h1>
-            <p class="hero__p1">Full-Stack Web Developer </p>
-            <p>Loving all things <span class="hero-clr-text-brack">{</span><span
-                    class="hero-clr-text-code">code</span><span class="hero-clr-text-brack">}</span></p>
-            <a href="#projects" class="proj-btn">Projects</a>
+    <section class="home" id="home">
+        <div class="hero-content pad">
+            <h1 class="hero-content__title">Hey, I'm Andrè Mæland</h1>
+            <p class="hero-content__subtitle">Full-Stack Web Developer</p>
+            <p class="hero-content__subtitle2">Loving all things<span class="subtitle2-bracket">{</span><span
+                    class="subtitle2-code">code</span><span class="subtitle2-bracket">}</span></p>
+            <a class="hero-content__project-btn" href="#projects" >Projects</a>
         </div>
 
     </section>
 
 
-    <section class="sec-rest pad about-bg" id="about">
+    <section class="about pad" id="about">
 
         <div class="container-gen">
             <div class="sec-container-head">
                 <h2 class="section-h2">About me</h2>
                 <p class="section-sub">My name is Andrè Mæland, I'm 36 years old. Currently attending AMO-course
-                    Kodehodet</p>
+                    Kodehodet.</p>
                 <p>Always up for a challenge in codewars!</p>
 
             </div>
@@ -120,7 +120,7 @@
 
     </section>
 
-    <section class="sec-rest pad" id="projects">
+    <section class="projects pad" id="projects">
         <div class="container-gen">
             <div class="sec-container-head">
                 <h2 class="section-h2">Projects</h2>
@@ -133,7 +133,7 @@
 
     </section>
 
-    <section class="sec-rest contact-bg pad about-bg" id="contact">
+    <section class="contact pad" id="contact">
         <div class="container-gen">
             <div class="sec-container-head">
                 <h2 class="section-h2">Contact</h2>
