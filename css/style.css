@@ -136,14 +136,15 @@ p {
   color: var(--main-clr);
 }
 
-
 .mobile-menu__link:hover,
 .mobile-menu__link:focus {
   color: grey;
 }
+
 .menu-btn {
   padding: 1em 0.5em;
 }
+
 .menu-btn__burger {
   width: 2em;
   height: 6px;
@@ -151,6 +152,7 @@ p {
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
+
 .menu-btn__burger::before,
 .menu-btn__burger::after {
   content: "";
@@ -161,20 +163,26 @@ p {
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
+
 .menu-btn__burger::before {
   transform: translateY(-10px);
 }
+
 .menu-btn__burger::after {
   transform: translateY(10px);
 }
+
 /* ANIMATION */
+
 .menu-btn.open .menu-btn__burger {
   transform: translateX(-50px);
   background-color: transparent;
 }
+
 .menu-btn.open .menu-btn__burger::before {
   transform: rotate(45deg) translate(35px, -35px);
 }
+
 .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
 }
@@ -203,6 +211,7 @@ p {
 .hero-content__subtitle2 {
   line-height: 1;
 }
+
 .hero-content__subtitle2 {
   margin-bottom: 4em;
 }
@@ -216,12 +225,13 @@ p {
   color: var(--title-clr);
   font-weight: 700;
 }
+
 .subtitle2-bracket{
   color: yellow;
   font-weight: 700;
 }
 
-.hero-content__project-btn {
+.hero-content__project-button {
   display: block;
   font-size: 1.5rem;
   font-weight: 700;
@@ -238,22 +248,23 @@ p {
 .about,
 .projects,
 .contact {
-  min-height: 100vh;
   background-color: var(--section-bg);
+  min-height: 100vh;
+  padding: 1.5em;
 }
 
 
-.container-gen {
-  margin: auto;
-  padding: 1em;
-}
-
-.sec-container-head {
+.about-head,
+.projects-head,
+.contact-head {
   text-align: center;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 4em;
 }
 
-.section-h2 {
+.about-head__title,
+.project-head__title,
+.contact-head__title {
   margin-bottom: 0.2em;
 }
 
@@ -261,45 +272,42 @@ p {
   padding-top: 7em;
 }
 
-
-
-.copyright {
-  color: var(--title-clr);
-}
-
 /* about */
 
-.sec-about-text,
-.sec-about-myskill {
+.about-desc
+.about-myskill {
   padding: 1em;
 }
 
-.sec-about-text p,
-.sec-about-text h3 {
+.about-desc__title,
+.about-desc__text {
   margin-bottom: 0.5em;
 }
 
-.sec-about-myskill {
+.about-myskill {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   max-width: 38.75em;
-
   gap: 2em 2em;
 }
-.myskill-box {
+
+.about-myskill-box {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.myskill-box > img {
-  width: 70%;
+
+.about-myskill__title {
+  grid-column: 1 / -1;
+}
+
+.about-myskill-box__img {
+  width: 60%;
   height: 100%;
 }
 
-.sec-about-myskill-header {
-  grid-column: 1 / -1;
-}
+/* projects */
+
 
 /* contact */
 
@@ -315,23 +323,28 @@ p {
   margin-bottom: 3em;
 }
 
-.contact-form label {
+.contact-form__label {
   line-height: 2em;
 }
 
-.contact-form textarea {
+.contact-form__input-field {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+ 
+  
+}
+
+.contact-form__input-field--textarea-size {
   min-height: 12em;
   resize: vertical;
 }
 
-.input-field {
-  width: 100%;
-  padding: 0.5em 0.5em;
-  margin-bottom: 1em;
+.contact-form__input-field--bg {
   background-color: var(--section-bg);
 }
 
-#submit-btn {
+.contact-form__button {
   width: 100%;
   font-size: 1rem;
   font-weight: 700;
@@ -343,12 +356,15 @@ p {
 
 /* footer */
 
-footer {
+.footer {
   background-color: #343a40;
   padding: 3em 0;
   text-align: center;
 }
 
+.copyright {
+  color: var(--title-clr);
+}
 
 
 
@@ -373,7 +389,7 @@ footer {
   .menu-btn {
     display: none;
   }
-  .sec-about-myskill {
+  .about-myskill {
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
   }
@@ -387,21 +403,18 @@ footer {
 
 @media (min-width: 850px) {
  
-  .sec-container-content {
+  .container-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: start;
     max-width: 62.5em;
     width: 100%;
-
     margin: auto;
-    gap: 0 8em;
+    gap: 0 9em;
   }
 
-  .sec-about-text {
-    width: 100%;
-  }
-  .sec-about-myskill {
+
+  .about-myskill {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
   }
