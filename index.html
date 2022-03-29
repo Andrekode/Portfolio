@@ -11,156 +11,144 @@
 </head>
 
 <body>
-    <header>
-        <img class="header__avatar" src="./images/avatar.png" width="640" height="360" alt="logo" />
+    <header class="header">
+        <img class="avatar" src="./images/avatar.png" width="640" height="360" alt="logo" />
         <!--- placeholder for logo-->
-        <nav class="nav">
+        <nav>
             <div class="menu-btn">
                 <div class="menu-btn__burger">
 
                 </div>
             </div>
-            <ul class="links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a> </li>
-                <li><a href="#">Cv</a> </li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav">
+                <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about">About</a> </li>
+                <li class="nav__item"><a class="nav__link" href="#">Cv</a> </li>
+                <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
             </ul>
         </nav>
         <ul class="mobile-menu">
-            <li class="mobile-menu-link"><a href="#home">Home</a></li>
-            <li class="mobile-menu-link"><a href="#about">About</a></li>
-            <li class="mobile-menu-link"><a href="#">Cv</a></li>
-            <li class="mobile-menu-link"><a href="#projects">Projects</a></li>
-            <li class="mobile-menu-link"><a href="#contact">Contact</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#home">Home</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#about">About</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Cv</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#projects">Projects</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#contact">Contact</a></li>
         </ul>
     </header>
 
 
-    <section class="sec-hero" id="home">
-        <div class="hero-container pad">
-            <h1>Hey, I'm Andrè Mæland</h1>
-            <p class="hero__p1">Full-Stack Web Developer </p>
-            <p>Loving all things <span class="hero-clr-text-brack">{</span><span
-                    class="hero-clr-text-code">code</span><span class="hero-clr-text-brack">}</span></p>
-            <a href="#projects" class="proj-btn">Projects</a>
+    <section class="home" id="home">
+        <div class="hero-content pad">
+            <h1 class="hero-content__title">Hey, I'm Andrè Mæland</h1>
+            <p class="hero-content__subtitle">Full-Stack Web Developer</p>
+            <p class="hero-content__subtitle2">Loving all things<span class="subtitle2-bracket">{</span><span
+                    class="subtitle2-code">code</span><span class="subtitle2-bracket">}</span></p>
+            <a class="hero-content__project-button" href="#projects" >Projects</a>
         </div>
 
     </section>
 
 
-    <section class="sec-rest pad about-bg" id="about">
+    <section class="about pad" id="about">
 
-        <div class="container-gen">
-            <div class="sec-container-head">
-                <h2 class="section-h2">About me</h2>
-                <p class="section-sub">My name is Andrè Mæland, I'm 36 years old. Currently attending AMO-course
-                    Kodehodet</p>
-                <p>Always up for a challenge in codewars!</p>
-
+            <div class="about-head">
+                <h2 class="about-head__title">About me</h2>
+                <p class="about-head__subtitle">My name is Andrè Mæland, I'm 36 years old. Currently attending AMO-course
+                    Kodehodet.</p>
+                <p class="about-head__subtitle2">Always up for a challenge in codewars!</p>
             </div>
-            <div class="sec-container-content">
 
-                <div class="sec-about-text">
-                    <h3>Me</h3>
-                    <p>From young age I've always been interested in anything computer related, from software to
+            <div class="container-content">
+
+                <div class="about-desc">
+                    <h3 class="about-desc__title">Me</h3>
+                    <p class="about-desc__text">From young age I've always been interested in anything computer related, from software to
                         hardware. With curiosity's drive I love to find solutions to problems in anything I should come
                         over. from Linux to modifying games or debugging.</p>
-                    <p>At the moment I'm a participant in Kodehode, an IT AMO-course where I work to become a Full-Stack
+                    <p class="about-desc__text">At the moment I'm a participant in Kodehode, an IT AMO-course where I work to become a Full-Stack
                         Developer </p>
-                    <p>I like to learn new things and stay updated with programming trends. If I don't code i like to
+                    <p class="about-desc__text">I like to learn new things and stay updated with programming trends. If I don't code i like to
                         game, currently playing a bit of Lost Ark, other than that I like to lift weights.</p>
                 </div>
-                <div class="sec-about-myskill">
-                    <h3 class="sec-about-myskill-header">Skills</h3>
-                    <div class="myskill-box">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+
+                <div class="about-myskill">
+                    <h3 class="about-myskill__title">Skills</h3>
+                    <div class="about-myskill-box">
+                        <img class="about-myskill-box__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
                             alt="Logo Html5" />
                     </div>
-                    <div class="myskill-box">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                    <div class="about-myskill-box">
+                        <img class="about-myskill-box__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
                             alt="Logo Css3" />
                     </div>
-                    <div class="myskill-box">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    <div class="about-myskill-box">
+                        <img class="about-myskill-box__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                             alt="Logo Javascript" />
                     </div>
-                    <div class="myskill-box">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+                    <div class="about-myskill-box">
+                        <img class="about-myskill-box__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
                             alt="Logo React" />
                     </div>
-                    <div class="myskill-box">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+                    <div class="about-myskill-box">
+                        <img class="about-myskill-box__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
                             alt="Logo Python" />
                     </div>
-                    <div class="myskill-box">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg"
+                    <div class="about-myskill-box">
+                        <img class="about-myskill-box__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg"
                             alt="Logo Vscode" />
                     </div>
-                    <div class="myskill-box">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+                    <div class="about-myskill-box">
+                        <img class="about-myskill-box__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
                             alt="Logo Github" />
                     </div>
-                    <div class="myskill-box">
-
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
+                    <div class="about-myskill-box">
+                        <img class="about-myskill-box__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
                             alt="Logo Git" />
                     </div>
-                    <div class="myskill-box">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                    <div class="about-myskill-box">
+                        <img class="about-myskill-box__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
                             alt="Logo Figma" />
                     </div>
-
                 </div>
 
             </div>
 
-        </div> <!-- /container-gen  -->
-
     </section>
 
-    <section class="sec-rest pad" id="projects">
-        <div class="container-gen">
-            <div class="sec-container-head">
-                <h2 class="section-h2">Projects</h2>
-                <p class="section-sub">These are some of the projects i've done. </p>
-
-
+    <section class="projects pad" id="projects">
+       
+            <div class="projects-head">
+                <h2 class="project-head__title">Projects</h2>
+                <p class="project-head__subtitle">These are some of the projects i've done.</p>
             </div>
-
-        </div>
-
+       
     </section>
 
-    <section class="sec-rest contact-bg pad about-bg" id="contact">
-        <div class="container-gen">
-            <div class="sec-container-head">
-                <h2 class="section-h2">Contact</h2>
-                <p class="section-sub">If you would like to contact me, you can reach me here. </p>
-
+    <section class="contact pad" id="contact">
+        
+            <div class="contact-head">
+                <h2 class="contact-head__title">Contact</h2>
+                <p class="contact-head__subtitle">If you would like to contact me, you can reach me here.</p>
             </div>
+
             <div class="form-container">
-                <form class="contact-form">
-                    <label for="name">Name</label>
-                    <input id="name" class="input-field" type="text" name="name">
-                    <label for="subject">Subject</label>
-                    <input id="subject" class="input-field" type="text" name="subject">
-                    <label for="email">Email</label>
-                    <input id="email" class="input-field" type="email" name="email">
-                    <label for="message">Message</label>
-                    <textarea id="message" class="input-field" name="message"></textarea>
-                    <input id="submit-btn" type="submit" value="Send">
-
+                <form action="/" class="contact-form">
+                    <label class="contact-form__label" for="name">Name</label>
+                    <input id="name" class="contact-form__input-field contact-form__input-field--bg" type="text" name="name" placeholder="Enter name">
+                    <label class="contact-form__label" for="subject">Subject</label>
+                    <input id="subject" class="contact-form__input-field contact-form__input-field--bg" type="text" name="subject" placeholder="Enter subject">
+                    <label class="contact-form__label" for="email">Email</label>
+                    <input id="email" class="contact-form__input-field contact-form__input-field--bg" type="email" name="email" placeholder="Enter email">
+                    <label class="contact-form__label" for="message">Message</label>
+                    <textarea id="message" class="contact-form__input-field contact-form__input-field--textarea-size contact-form__input-field--bg" name="message" placeholder="Enter message"></textarea>
+                    <input class="contact-form__button" id="submit-btn" type="submit" value="Send">
                 </form>
-
             </div>
-
-        </div>
 
     </section>
 
-    <footer>
+    <footer class="footer">
         <!-- name, socials copyright etc.  -->
         <small class="copyright">&copy;</small>
     </footer>
