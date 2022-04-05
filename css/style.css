@@ -313,6 +313,15 @@ p {
 /* projects */
 
 
+.project-desc {
+  margin-bottom: 2em;
+}
+.project-portfolio__img,
+.project-todo__img {
+  max-width: 100%;
+  
+}
+
 /* contact */
 
 .contact-form {
@@ -409,7 +418,7 @@ p {
 
 @media (min-width: 850px) {
  
-  .container-content {
+  .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: start;
@@ -417,6 +426,21 @@ p {
     width: 100%;
     margin: auto;
     gap: 0 9em;
+  }
+  
+  .projects-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9em;
+    max-width: 62.5em;
+    margin: auto;
+    width: 100%;
+  }
+  .project-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
 
 
