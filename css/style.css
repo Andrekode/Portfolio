@@ -189,7 +189,6 @@ p {
 
 /* layout */
 
-
 /* Section home */
 
 .home {
@@ -207,7 +206,7 @@ p {
   color: #e9ecef;
 }
 
-.hero-content__subtitle, 
+.hero-content__subtitle,
 .hero-content__subtitle2 {
   line-height: 1;
 }
@@ -226,7 +225,7 @@ p {
   font-weight: 700;
 }
 
-.subtitle2-bracket{
+.subtitle2-bracket {
   color: yellow;
   font-weight: 700;
 }
@@ -253,7 +252,6 @@ p {
   padding: 1.5em;
 }
 
-
 .about-head,
 .projects-head,
 .contact-head {
@@ -268,14 +266,21 @@ p {
   margin-bottom: 0.2em;
 }
 
+.about-head-cvcontainer {
+  margin-top: 1em;
+}
+
+.about-head-cvcontainer__cv {
+  font-size: 1.3rem;
+}
+
 .pad {
   padding-top: 7em;
 }
 
 /* about */
 
-.about-desc
-.about-myskill {
+.about-desc .about-myskill {
   padding: 1em;
 }
 
@@ -312,14 +317,25 @@ p {
 
 /* projects */
 
-
 .project-desc {
   margin-bottom: 2em;
 }
 .project-portfolio__img,
 .project-todo__img {
   max-width: 100%;
-  
+}
+
+.project-lang {
+  display: flex;
+  margin: 1em 0;
+}
+
+.project-lang {
+  display: flex;
+}
+
+.project-lang__img {
+  width: 2em;
 }
 
 /* contact */
@@ -344,8 +360,6 @@ p {
   width: 100%;
   padding: 0.5em;
   margin-bottom: 1em;
- 
-  
 }
 
 .contact-form__input-field--textarea-size {
@@ -378,10 +392,6 @@ p {
 .copyright {
   color: var(--title-clr);
 }
-
-
-
-
 
 /* media */
 
@@ -417,7 +427,6 @@ p {
 }
 
 @media (min-width: 850px) {
- 
   .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -427,7 +436,7 @@ p {
     margin: auto;
     gap: 0 9em;
   }
-  
+
   .projects-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -442,7 +451,6 @@ p {
     justify-content: center;
     align-items: flex-start;
   }
-
 
   .about-myskill {
     grid-template-columns: repeat(3, 1fr);
