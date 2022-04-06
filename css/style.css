@@ -271,6 +271,7 @@ p {
 }
 
 .about-head-cvcontainer__cv {
+  color: var(--main-clr);
   font-size: 1.3rem;
 }
 
