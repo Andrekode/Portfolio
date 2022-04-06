@@ -338,6 +338,9 @@ p {
 .project-lang__img {
   width: 2em;
 }
+.project-desc__link {
+  color: var(--main-clr);
+}
 
 /* contact */
 
