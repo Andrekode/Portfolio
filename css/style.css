@@ -321,8 +321,17 @@ p {
 .project-desc {
   margin-bottom: 2em;
 }
-.project-portfolio__img,
-.project-todo__img {
+
+.project-desc__title {
+  margin: 0.5em 0;
+}
+
+.project-desc__text {
+  font-size: 1rem;
+  letter-spacing: 0.3;
+}
+
+.project__img {
   max-width: 100%;
 }
 
