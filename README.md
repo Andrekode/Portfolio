@@ -1,4 +1,8 @@
 # Portfolio
 My portfolio
 
-Built with html, css and javascript. Also tried to follow the BEM convention.
+Responsive site made with html css and javascript.  Javascript was used  mostly for the mobile menu. 
+
+BEM convention was followed but not the T
+
+
